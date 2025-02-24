@@ -1,0 +1,30 @@
+Study Case Report
+
+### 1. Best-Selling Product Vendors 
+Purpose: Identify the top product vendors by sales volume.  
+SQL Query:  
+```sql
+SELECT 
+    dp.product_vendor, 
+    SUM(fo.order_amount) AS total_sales
+FROM model.fact_order fo
+JOIN model.dim_product dp ON fo.sk_product = dp.sk_product
+GROUP BY dp.product_vendor
+ORDER BY total_sales DESC
+LIMIT 5;
+```
+
+
+### 2. Sales Office Performance
+Purpose: Compare sales between different office locations.  
+SQL Query:  
+```sql
+SELECT 
+    ds.sales_office_city, 
+    SUM(fo.order_amount) AS total_sales
+FROM model.fact_order fo
+JOIN model.dim_customer do ON fo.sk_customer = do.sk_customer
+JOIN model.dim_sales ds ON do.customer_sales_representative = ds.sales_number
+GROUP BY ds.sales_office_city
+ORDER BY total_sales DESC;
+```
