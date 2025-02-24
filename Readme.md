@@ -49,7 +49,7 @@ https://docs.google.com/presentation/d/1aklzLyalHAhNigjdkHENIyRu3FMj9VoA1d67O1x8
    Build interactive dashboards and reports for business users with Metabase.
 
 	- Dashboard/"Dashboard - Summary Order.pdf"
-	- Sample/Netflix100k.txt
+	- Script/reportTestCase.txt
 
 ## Technologies Used
 - **Apache Doris** – High-performance analytical database
