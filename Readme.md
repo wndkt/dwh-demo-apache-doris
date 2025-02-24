@@ -70,4 +70,4 @@ Feel free to contribute, raise issues, or share feedback!
 **Contact**
 - Linkedin - https://www.linkedin.com/in/wandhanakurnia/
 - Youtube - https://www.youtube.com/@wndktech
-- Email: wandhanak@gmail.com
+- Email - wandhanak@gmail.com
